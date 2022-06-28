@@ -367,13 +367,14 @@ class _MyAppState extends State<MyApp> {
       country = null;
       catagory = null;
       baseApi =
-          "https://newsapi.org/v2/top-headlines?pageSize=10&page=$pageNum&sources=$channel&apiKey=58b98b48d2c74d9c94dd5dc296ccf7b6";
+          // "https://newsapi.org/v2/top-headlines?pageSize=10&page=$pageNum&sources=$channel&apiKey=58b98b48d2c74d9c94dd5dc296ccf7b6";
+          "https://newsapi.org/v2/top-headlines?pageSize=10&page=$pageNum&sources=$channel&apiKey=ff49425766b6483fb83a99908ca339b1";
     }
     if (searchKey != null) {
       country = null;
       catagory = null;
       baseApi =
-          "https://newsapi.org/v2/top-headlines?pageSize=10&page=$pageNum&q=$searchKey&apiKey=58b98b48d2c74d9c94dd5dc296ccf7b6";
+          "https://newsapi.org/v2/top-headlines?pageSize=10&page=$pageNum&q=$searchKey&apiKey=ff49425766b6483fb83a99908ca339b1";
     }
     //print(baseApi);
     getDataFromApi(baseApi);
